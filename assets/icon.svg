@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="t d">
+  <title id="t">Fluffless Prompt</title>
+  <desc id="d">Fluffless Prompt app icon: a quiet terminal prompt mark on a dark warm tile.</desc>
+  <rect width="512" height="512" rx="104" fill="#1d1b18"/>
+  <circle cx="256" cy="256" r="190" fill="#24211d" stroke="#3a352f" stroke-width="5"/>
+  <rect x="132" y="158" width="248" height="196" rx="34" fill="none" stroke="#6e675d" stroke-width="8"/>
+  <path d="M174 210l42 46-42 46" fill="none" stroke="#f0e7da" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M244 302h72" fill="none" stroke="#d2a04f" stroke-width="20" stroke-linecap="round"/>
+</svg>
