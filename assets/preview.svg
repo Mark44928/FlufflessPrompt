@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="t d">
+<title id="t">Fluffless Prompt preview</title>
+<desc id="d">A warm, quiet terminal prompt with the working directory, Git branch, dirty marker and a small right-side clock.</desc>
+<rect width="1600" height="900" fill="#1d1b18"/>
+<rect x="120" y="120" width="1360" height="660" rx="18" fill="#24211d" stroke="#3a352f" stroke-width="2"/>
+<circle cx="163" cy="160" r="8" fill="#c85f52"/>
+<circle cx="190" cy="160" r="8" fill="#d2a04f"/>
+<circle cx="217" cy="160" r="8" fill="#8fa86b"/>
+<text x="260" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="18" fill="#b8b0a4">zsh — fluffless</text>
+<text x="180" y="350" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="38" fill="#8f887d">~/code/fluffless-prompt <tspan fill="#aaa294">main</tspan><tspan fill="#d2a04f">•</tspan></text>
+<text x="180" y="450" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="48" fill="#f0e7da">❯</text>
+<text x="1180" y="450" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="30" fill="#6e675d" text-anchor="end">14:32</text>
+<text x="180" y="590" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="19" fill="#6e675d">no boxes · no pipes · no phosphor fantasy</text>
+</svg>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Fluffless Prompt — quiet Oh My Zsh minimalism</title>
+<link rel="canonical" href="https://mark44928.github.io/FlufflessPrompt/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mark44928">
+<meta property="og:title" content="Fluffless Prompt — quiet Oh My Zsh minimalism">
+<meta property="og:description" content="A warm Oh My Zsh theme: directory, Git state and a small clock. No boxes, no glyphs,no phosphor fantasy.">
+<meta property="og:url" content="https://mark44928.github.io/FlufflessPrompt/">
+<meta property="og:image" content="https://mark44928.github.io/FlufflessPrompt/assets/preview.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://mark44928.github.io/FlufflessPrompt/assets/preview.svg">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<style>
+:root{color-scheme:dark;--bg:#1d1b18;--panel:#24211d;--line:#3a352f;--fg:#f0e7da;--muted:#aaa294;--accent:#d2a04f}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(75% 55% at 50% 0,#302b24,var(--bg));color:var(--fg);font:16px/1.55 ui-sans-serif,system-ui,sans-serif}
+main{max-width:900px;margin:auto;padding:42px 20px 64px}a{color:var(--accent)}
+.back{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;color:var(--muted)}
+.logo{width:min(760px,100%);height:auto;display:block;margin:18px 0}
+.kicker{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin:28px 0 8px}
+h1{font-size:clamp(3rem,10vw,5.7rem);line-height:.92;letter-spacing:-.06em;margin:0}.lede{font-size:1.18rem;color:var(--muted);max-width:64ch}.buttons{display:flex;flex-wrap:wrap;gap:10px;margin:26px 0}.btn{padding:11px 15px;border:1px solid var(--line);border-radius:9px;color:var(--fg);text-decoration:none;background:var(--panel);font-weight:700}.btn.primary{border-color:var(--accent);color:var(--accent)}
+pre{background:#12100e;border:1px solid var(--line);border-radius:11px;padding:15px;overflow:auto}
+.preview{width:100%;border:1px solid var(--line);border-radius:14px;margin:28px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;list-style:none;padding:0}
+.grid li{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px;color:var(--muted)}.grid b{display:block;color:var(--fg)}
+footer{margin-top:36px;padding-top:15px;border-top:1px solid var(--line);color:var(--muted);font-size:.8rem;display:flex;justify-content:space-between;gap:18px}
+@media(max-width:700px){footer{flex-direction:column}}
+</style>
+<main>
+<a class="back" href="https://mark44928.github.io/Mark44928/">← Back to family hub</a>
+<img class="logo" src="assets/logo.svg" alt="Fluffless Prompt logo">
+<p class="kicker">Oh My Zsh theme</p>
+<h1>Less chrome.<br>More prompt.</h1>
+<p class="lede">Fluffless Prompt is a quiet, dense Oh My Zsh theme: current directory, Git state, exit-code feedback and a small clock — nothing else performing for an audience.</p>
+<div class="buttons"><a class="btn primary" href="https://github.com/Mark44928/FlufflessPrompt">Install &amp; source</a><a class="btn" href="#install">Install</a><a class="btn" href="assets/preview.svg">Preview</a></div>
+<pre id="install">cp fluffless.zsh-theme ~/.oh-my-zsh/custom/themes/
+# ~/.zshrc: ZSH_THEME="fluffless"
+source ~/.zshrc</pre>
+<img class="preview" src="assets/preview.svg" alt="Fluffless Prompt running in a warm terminal">
+<ul class="grid"><li><b>One file</b>no plugins, no glyph dependency</li><li><b>Git aware</b>branch and dirty marker</li><li><b>Fail loud</b>exit codes replace the arrow</li><li><b>Not retro</b>warm neutrals, no phosphor cosplay</li></ul>
+<footer><span>Fluffless Prompt · MIT</span><span><a href="https://github.com/Mark44928/FlufflessPrompt">Source</a> · <a href="https://mark44928.github.io/Mark44928/">Family hub</a></span></footer>
+</main>
+</html>
