@@ -19,7 +19,7 @@ if (( ! ${+_fluffless_prompt_initialized} )); then
     _fluffless_prompt_error="%F{$FLUFFLESS_ERROR}"
     _fluffless_prompt_reset='%f'
 
-    _fluffless_prompt_git_segment='\${_fluffless_prompt_git_cache_out:+ \${_fluffless_prompt_git_cache_out}}'
+    _fluffless_prompt_git_segment='${_fluffless_prompt_git_cache_out:+ ${_fluffless_prompt_git_cache_out}}'
     [[ "$FLUFFLESS_SHOW_GIT" == 1 ]] || _fluffless_prompt_git_segment=''
 
     PROMPT="${_fluffless_prompt_dim}%~${_fluffless_prompt_reset}${_fluffless_prompt_git_segment} ${_fluffless_prompt_reset}${_fluffless_prompt_muted}%(?||${_fluffless_prompt_error}%?${_fluffless_prompt_reset} )${_fluffless_prompt_accent}❯${_fluffless_prompt_reset} "

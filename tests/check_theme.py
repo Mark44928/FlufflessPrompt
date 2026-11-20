@@ -42,6 +42,7 @@ def main() -> int:
         assert "❯" in out, out
         assert __import__("re").search(r"\d{2}:\d{2}", out), out
         assert "repo" in out, out
+        assert "${_fluffless_prompt_git_cache_out" not in out, out
 
         quiet = zsh(
             f'FLUFFLESS_SHOW_CLOCK=0; FLUFFLESS_SHOW_GIT=0; source "{THEME}"; '

@@ -6,6 +6,8 @@ A minimal Oh My Zsh theme for people who like their terminal dense, calm and rea
 
 ![Fluffless Prompt preview](assets/preview.svg)
 
+<img src="docs/screenshot-prompt.png" width="720" alt="Fluffless Prompt in zsh">
+
 ## What it shows
 
 Left side: current directory, Git branch, optional dirty marker and the prompt marker.
