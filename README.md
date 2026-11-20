@@ -51,7 +51,11 @@ FLUFFLESS_MUTED=238
 FLUFFLESS_ACCENT=180
 FLUFFLESS_ERROR=203
 FLUFFLESS_GIT_CACHE_TTL=10
+FLUFFLESS_SHOW_GIT=0
+FLUFFLESS_SHOW_CLOCK=0
 ```
+
+Set `FLUFFLESS_SHOW_GIT=0` to drop the branch/dirty segment (and its Git forks), or `FLUFFLESS_SHOW_CLOCK=0` for a left-only prompt.
 
 ## Design
 

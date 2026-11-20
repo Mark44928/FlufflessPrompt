@@ -38,10 +38,20 @@ def main() -> int:
             cwd=repo,
         ).stdout
 
-    assert "main" in out, out
-    assert "❯" in out, out
-    assert __import__("re").search(r"\d{2}:\d{2}", out), out
-    assert "repo" in out, out
+        assert "main" in out, out
+        assert "❯" in out, out
+        assert __import__("re").search(r"\d{2}:\d{2}", out), out
+        assert "repo" in out, out
+
+        quiet = zsh(
+            f'FLUFFLESS_SHOW_CLOCK=0; FLUFFLESS_SHOW_GIT=0; source "{THEME}"; '
+            '_fluffless_prompt_precmd; print -P -- "${(%)PROMPT}\\n${(%)RPROMPT}"',
+            cwd=repo,
+        ).stdout
+        assert "❯" in quiet, quiet
+        assert "main" not in quiet, quiet
+        assert not __import__("re").search(r"\d{2}:\d{2}", quiet), quiet
+
     print("fluffless theme check OK")
     return 0
 

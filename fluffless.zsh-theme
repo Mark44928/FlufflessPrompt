@@ -9,6 +9,8 @@ setopt PROMPT_SUBST
 : ${FLUFFLESS_ACCENT:=181}
 : ${FLUFFLESS_ERROR:=203}
 : ${FLUFFLESS_GIT_CACHE_TTL:=5}
+: ${FLUFFLESS_SHOW_GIT:=1}
+: ${FLUFFLESS_SHOW_CLOCK:=1}
 : "${FLUFFLESS_GIT_CACHE_DIR:=${PWD}}"
 if (( ! ${+_fluffless_prompt_initialized} )); then
     _fluffless_prompt_dim="%F{$FLUFFLESS_DIM}"
@@ -17,8 +19,15 @@ if (( ! ${+_fluffless_prompt_initialized} )); then
     _fluffless_prompt_error="%F{$FLUFFLESS_ERROR}"
     _fluffless_prompt_reset='%f'
 
-    PROMPT="${_fluffless_prompt_dim}%~${_fluffless_prompt_reset}\${_fluffless_prompt_git_cache_out:+ \${_fluffless_prompt_git_cache_out}} ${_fluffless_prompt_reset}${_fluffless_prompt_muted}%(?||${_fluffless_prompt_error}%?${_fluffless_prompt_reset} )${_fluffless_prompt_accent}❯${_fluffless_prompt_reset} "
-    RPROMPT="${_fluffless_prompt_muted}%D{%H:%M}${_fluffless_prompt_reset}"
+    _fluffless_prompt_git_segment='\${_fluffless_prompt_git_cache_out:+ \${_fluffless_prompt_git_cache_out}}'
+    [[ "$FLUFFLESS_SHOW_GIT" == 1 ]] || _fluffless_prompt_git_segment=''
+
+    PROMPT="${_fluffless_prompt_dim}%~${_fluffless_prompt_reset}${_fluffless_prompt_git_segment} ${_fluffless_prompt_reset}${_fluffless_prompt_muted}%(?||${_fluffless_prompt_error}%?${_fluffless_prompt_reset} )${_fluffless_prompt_accent}❯${_fluffless_prompt_reset} "
+    if [[ "$FLUFFLESS_SHOW_CLOCK" == 1 ]]; then
+        RPROMPT="${_fluffless_prompt_muted}%D{%H:%M}${_fluffless_prompt_reset}"
+    else
+        RPROMPT=''
+    fi
     typeset -g _fluffless_prompt_initialized=1
 fi
 
@@ -38,6 +47,11 @@ _fluffless_git_is_dirty() {
 _fluffless_prompt_git() {
     local now
     now=$EPOCHSECONDS
+
+    if [[ "$FLUFFLESS_SHOW_GIT" != 1 ]]; then
+        _fluffless_prompt_git_cache_out=""
+        return
+    fi
 
     # Cache by directory so deep prompt cycles do not fork git all the time.
     if [[ "$_fluffless_prompt_git_cache_dir" == "$PWD" && $(( now - _fluffless_prompt_git_cache_epoch )) -lt $FLUFFLESS_GIT_CACHE_TTL ]]; then
