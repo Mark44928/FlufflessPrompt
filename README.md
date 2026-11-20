@@ -69,4 +69,6 @@ make check
 
 This runs Zsh syntax checks and verifies the theme renders a Git branch in a temporary repository.
 
+Part of the [Mark44928 family](https://mark44928.github.io/Mark44928/): [Weatui](https://github.com/Mark44928/Weatui) · [Yellen](https://github.com/Mark44928/Yellen) · [Greenit](https://github.com/Mark44928/Greenit) · [Bluney](https://github.com/Mark44928/Bluney).
+
 MIT.
