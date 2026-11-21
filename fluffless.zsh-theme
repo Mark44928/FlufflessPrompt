@@ -11,7 +11,6 @@ setopt PROMPT_SUBST
 : ${FLUFFLESS_GIT_CACHE_TTL:=5}
 : ${FLUFFLESS_SHOW_GIT:=1}
 : ${FLUFFLESS_SHOW_CLOCK:=1}
-: "${FLUFFLESS_GIT_CACHE_DIR:=${PWD}}"
 if (( ! ${+_fluffless_prompt_initialized} )); then
     _fluffless_prompt_dim="%F{$FLUFFLESS_DIM}"
     _fluffless_prompt_muted="%F{$FLUFFLESS_MUTED}"
