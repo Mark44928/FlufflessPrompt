@@ -4,8 +4,6 @@
 
 A minimal Oh My Zsh theme for people who like their terminal dense, calm and readable — not repackaged 1983. It keeps the useful signal, drops the theater, and uses warm neutrals instead of neon green, ASCII pipes or fake CRT nostalgia.
 
-![Fluffless Prompt preview](assets/preview.svg)
-
 <img src="docs/screenshot-prompt.png" width="720" alt="Fluffless Prompt in zsh">
 
 ## What it shows
