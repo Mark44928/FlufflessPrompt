@@ -28,6 +28,9 @@ if (( ! ${+_fluffless_prompt_initialized} )); then
         else
             RPROMPT="${_fluffless_prompt_muted}%D{%H:%M}${_fluffless_prompt_reset}"
         fi
+        if [[ "$FLUFFLESS_SHOW_DATE" == 1 ]]; then
+            RPROMPT="${_fluffless_prompt_muted}%D{%Y-%m-%d} ${RPROMPT}"
+        fi
     else
         RPROMPT=''
     fi
