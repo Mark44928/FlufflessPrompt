@@ -23,7 +23,11 @@ if (( ! ${+_fluffless_prompt_initialized} )); then
 
     PROMPT="${_fluffless_prompt_dim}%~${_fluffless_prompt_reset}${_fluffless_prompt_git_segment} ${_fluffless_prompt_reset}${_fluffless_prompt_muted}%(?||${_fluffless_prompt_error}%?${_fluffless_prompt_reset} )${_fluffless_prompt_accent}❯${_fluffless_prompt_reset} "
     if [[ "$FLUFFLESS_SHOW_CLOCK" == 1 ]]; then
-        RPROMPT="${_fluffless_prompt_muted}%D{%H:%M}${_fluffless_prompt_reset}"
+        if [[ "$FLUFFLESS_SHOW_SECONDS" == 1 ]]; then
+            RPROMPT="${_fluffless_prompt_muted}%D{%H:%M:%S}${_fluffless_prompt_reset}"
+        else
+            RPROMPT="${_fluffless_prompt_muted}%D{%H:%M}${_fluffless_prompt_reset}"
+        fi
     else
         RPROMPT=''
     fi
