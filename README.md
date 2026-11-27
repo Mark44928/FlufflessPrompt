@@ -76,3 +76,13 @@ This runs Zsh syntax checks and verifies the theme renders a Git branch in a tem
 Part of the [Mark44928 family](https://mark44928.github.io/Mark44928/): [Weatui](https://github.com/Mark44928/Weatui) · [Yellen](https://github.com/Mark44928/Yellen) · [Greenit](https://github.com/Mark44928/Greenit) · [Bluney](https://github.com/Mark44928/Bluney).
 
 MIT.
+
+---
+
+<div align="center">
+<img width="100%" src="https://api.star-history.com/svg?repos=Mark44928/FlufflessPrompt&amp;type=Date" alt="Star history" />
+</div>
+
+---
+
+**More projects:** [Mark44928's hub](https://mark44928.github.io/Mark44928/) — a family of dependency-free tools for Termux, Linux, and the terminal.
