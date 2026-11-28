@@ -1,8 +1,10 @@
 # Fluffless Prompt
 
-<p align="center"><img src="assets/logo.svg?v=2" width="760" alt="Fluffless Prompt"></p>
+**A quiet Oh My Zsh theme — directory, Git state, failure/status and a small clock. No boxes, no glyphs, no retro phosphor cosplay.**
 
-A minimal Oh My Zsh theme for people who like their terminal dense, calm and readable — not repackaged 1983. It keeps the useful signal, drops the theater, and uses warm neutrals instead of neon green, ASCII pipes or fake CRT nostalgia.
+Warm neutrals. Dense and calm. Made for people who like their terminal readable, not theatrical.
+
+<p align="center"><img src="assets/logo.svg?v=2" width="760" alt="Fluffless Prompt"></p>
 
 <img src="docs/screenshot-prompt.png" width="720" alt="Fluffless Prompt in zsh">
 
@@ -55,7 +57,7 @@ FLUFFLESS_SHOW_GIT=0
 FLUFFLESS_SHOW_CLOCK=0
 ```
 
-Set `FLUFFLESS_SHOW_GIT=0` to drop the branch/dirty segment (and its Git forks), or `FLUFFLESS_SHOW_CLOCK=0` for a left-only prompt.
+Set `FLUFFLESS_SHOW_GIT=0` to drop the branch/dirty segment, or `FLUFFLESS_SHOW_CLOCK=0` for a left-only prompt.
 
 ## Design
 
@@ -63,7 +65,15 @@ Set `FLUFFLESS_SHOW_GIT=0` to drop the branch/dirty segment (and its Git forks),
 - no borders, boxes, pictograms or alphabet soup
 - no glyph-only setup that breaks on stock fonts
 - one color for the prompt, one for Git state, one for failure
-- subdued clock in the far right corner where it will not fight your command line
+- subdued clock in the far right corner
+
+## Related Mark44928 projects
+
+- [Greenit](https://github.com/Mark44928/Greenit) · [Bluney](https://github.com/Mark44928/Bluney) · [Yellen](https://github.com/Mark44928/Yellen) — full theme families
+- [Weatui](https://github.com/Mark44928/Weatui) — friendly terminal weather TUI
+- [SnakTUI](https://github.com/Mark44928/SnakTUI) — neon terminal Snake
+- [TuxMorph](https://github.com/Mark44928/TuxMorph) — living ASCII Tux
+- Full hub: [Mark44928](https://mark44928.github.io/Mark44928/)
 
 ## Test
 
@@ -71,18 +81,12 @@ Set `FLUFFLESS_SHOW_GIT=0` to drop the branch/dirty segment (and its Git forks),
 make check
 ```
 
-This runs Zsh syntax checks and verifies the theme renders a Git branch in a temporary repository.
-
-Part of the [Mark44928 family](https://mark44928.github.io/Mark44928/): [Weatui](https://github.com/Mark44928/Weatui) · [Yellen](https://github.com/Mark44928/Yellen) · [Greenit](https://github.com/Mark44928/Greenit) · [Bluney](https://github.com/Mark44928/Bluney).
+## License
 
 MIT.
 
 ---
 
 <div align="center">
-<img width="100%" src="https://api.star-history.com/svg?repos=Mark44928/FlufflessPrompt&amp;type=Date" alt="Star history" />
+<img width="100%" src="https://api.star-history.com/svg?repos=Mark44928/FlufflessPrompt&type=Date" alt="Star history" />
 </div>
-
----
-
-**More projects:** [Mark44928's hub](https://mark44928.github.io/Mark44928/) — a family of dependency-free tools for Termux, Linux, and the terminal.
